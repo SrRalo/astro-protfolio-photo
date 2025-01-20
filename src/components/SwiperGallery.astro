@@ -1,0 +1,141 @@
+---
+import Swiper from 'swiper';
+import Autoplay  from 'swiper';
+import Navigation from "swiper";
+import Pagination from "swiper";
+
+---
+
+<section class="py-12 bg-gray-100 text-center">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8">Highlights</h2>
+
+    <!-- Swiper container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a
+            href="https://www.metropolitan-touring.com/wp-content/uploads/2023/04/galapagos-islands-ecuador-1.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
+          >
+            <img
+              class="rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-105"
+              src="https://www.metropolitan-touring.com/wp-content/uploads/2023/04/galapagos-islands-ecuador-1.webp"
+              alt="Galápagos"
+            />
+            <div class="mt-4">
+              <p class="text-xl font-bold">Galápagos</p>
+              <p class="text-gray-500">
+                With the experience of more than 10 years, I am glad to offer
+                you a wide variety of love story photography services at
+                affordable prices.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            href="https://i.pinimg.com/originals/27/c4/7c/27c47cca2c92bae1a19905ced3b99550.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
+          >
+            <img
+              class="rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-105"
+              src="https://i.pinimg.com/originals/27/c4/7c/27c47cca2c92bae1a19905ced3b99550.jpg"
+              alt="Manta"
+            />
+            <div class="mt-4">
+              <p class="text-xl font-bold">Manta</p>
+              <p class="text-gray-500">
+                With the experience of more than 10 years, I am glad to offer
+                you a wide variety of love story photography services at
+                affordable prices.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            href="https://irp.cdn-website.com/23be95e4/dms3rep/multi/Imagen+1-b5e9bd4b.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
+          >
+            <img
+              class="rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-105"
+              src="https://irp.cdn-website.com/23be95e4/dms3rep/multi/Imagen+1-b5e9bd4b.png"
+              alt="Cuenca"
+            />
+            <div class="mt-4">
+              <p class="text-xl font-bold">Cuenca</p>
+              <p class="text-gray-500">
+                With the experience of more than 10 years, I am glad to offer
+                you a wide variety of love story photography services at
+                affordable prices.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            href="https://www.clave.com.ec/wp-content/uploads/2018/10/DSC_0299.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
+          >
+            <img
+              class="rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-105"
+              src="https://www.clave.com.ec/wp-content/uploads/2018/10/DSC_0299.jpg"
+              alt="Guayaquil"
+            />
+            <div class="mt-4">
+              <p class="text-xl font-bold">Guayaquil</p>
+              <p class="text-gray-500">
+                With the experience of more than 10 years, I am glad to offer
+                you a wide variety of love story photography services at
+                affordable prices.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+    import Swiper from 'swiper';
+  const swiper = new Swiper('.swiper', {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    loop: true,
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
